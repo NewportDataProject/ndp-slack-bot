@@ -167,6 +167,7 @@ if (!process.env.clientId || !process.env.clientSecret) {
   }
 }
 
+
 // reply to a mention - @ndp_test_chat_bot
 controller.on('direct_mention',function(bot,message) {
     //reply to _message by using the _bot_ object
@@ -177,6 +178,7 @@ controller.on('direct_mention',function(bot,message) {
 controller.on('direct_message',function(bot,message) {
     bot.reply(message,'You are talking directly to me');
 });
+
 
 
 function usage_tip() {
